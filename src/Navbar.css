@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ff6347;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.title {
+  font-size: 24px;
+  color: white;
+  font-family: 'Lobster', cursive;
+}
+
+.cart {
+  position: relative;
+  margin-left: auto;
+  padding-right: 80px; 
+}
+
+.cartLink {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.cartCount {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background-color: white;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ff6347;
+  font-size: 12px;
+  font-weight: bold;
+}

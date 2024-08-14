@@ -36,3 +36,66 @@
     transform: rotate(360deg);
   }
 }
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.content {
+  padding-top: 60px; 
+}
+
+.app-background {
+  background-image: url('/public/mamm-mia.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; 
+  min-height: 100vh;
+  padding-top: 60px;
+}
+
+.pizza-card {
+  background-color: white; 
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  text-align: center; 
+  width: 250px; 
+}
+
+.pizza-card h2, .pizza-card h3 {
+  color: #333; 
+  margin-bottom: 10px;
+}
+
+.pizza-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.pizza-card p {
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.pizza-card button {
+  background-color: #ff6347;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.pizza-card a {
+  text-decoration: none;
+  color: #ff6347;
+  display: block;
+  margin-top: 10px;
+}
