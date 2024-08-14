@@ -1,3 +1,14 @@
+.pizza-ingredients-icons {
+  display: flex;
+  flex-direction: column; /* Alinear los íconos en columna */
+  align-items: center;
+  margin-top: 20px;
+}
+
+.ingredient-icon {
+  margin: 5px 0; /* Espaciado entre los íconos */
+}
+
 .pizza-details-container {
     display: flex;
     justify-content: center;
@@ -21,15 +32,6 @@
     height: auto;
     border-radius: 10px;
     margin-bottom: 20px;
-  }
-  
-  .pizza-description, .pizza-ingredients, .pizza-price {
-    font-size: 18px;
-    margin-bottom: 10px;
-  }
-  
-  .pizza-ingredients {
-    font-style: italic;
   }
   
   .back-button {
