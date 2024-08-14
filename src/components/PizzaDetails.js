@@ -28,11 +28,12 @@ function PizzaDetails() {
 
 export default PizzaDetails;*/
 
+// PizzaDetails.js
 import React from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import pizzasData from '../data/pizzas.json';
-import { FaPizzaSlice } from 'react-icons/fa';
 import '../PizzaDetails.css';
+import { FaPizzaSlice } from 'react-icons/fa'; // Importamos el icono de pizza
 
 function PizzaDetails() {
   const { id } = useParams();
@@ -48,14 +49,15 @@ function PizzaDetails() {
       <div className="pizza-card-details">
         <h1>{pizza.name}</h1>
         <img src={pizza.img} alt={pizza.name} className="pizza-details-img" />
-        {/* Mostrar un ícono de pizza por cada ingrediente */}
-        <div className="pizza-ingredients-icons">
+        <h3>Ingredientes:</h3>
+        <ul className="ingredient-list">
           {pizza.ingredients.map((ingredient, index) => (
-            <div key={index} className="ingredient-icon">
-              <FaPizzaSlice size={24} />
-            </div>
+            <li key={index} className="ingredient-item">
+              <FaPizzaSlice className="ingredient-icon" /> {ingredient}
+            </li>
           ))}
-        </div>
+        </ul>
+        <p className="pizza-price">Precio: ${pizza.price}</p>
         <button onClick={() => navigate('/')} className="back-button">Volver</button>
       </div>
     </div>
