@@ -21,7 +21,7 @@ const App = () => {
             <Route path="/cart" element={<Cart />} />
           </Routes>
         </div>
-        <Footer /> {/* Incluye el Footer aquí */}
+        <Footer />
       </Router>
     </CartProvider>
   );

@@ -28,7 +28,7 @@ function PizzaDetails() {
           ))}
         </ul>
         <p className="pizza-price">Precio: ${pizza.price}</p>
-        <button onClick={() => navigate('/')} className="back-button">Volver</button>
+        <button onClick={() => navigate('/')} className="back-button">Volver</button>        
       </div>
     </div>
   );

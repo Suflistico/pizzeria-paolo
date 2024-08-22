@@ -49,6 +49,7 @@ function Cart() {
         </div>
       )}
       <button onClick={() => navigate('/')} className="back-button">Volver</button>
+      <button className='back-button'>Pagar</button>
     </div>
   );
 }
